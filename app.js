@@ -7,9 +7,7 @@ const cors = require('cors');
 
 const router = require('./Route/index')
 
-app.use(cors({
-    origin: 'http://localhost:3000'
-}))
+app.use(cors())
 
 app.use(express.json())  //Parse the json data
 app.use('/v1', router);
